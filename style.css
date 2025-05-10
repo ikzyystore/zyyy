@@ -1,0 +1,210 @@
+/* NAVBAR DAN TITLE */
+.navbar {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  text-align: center;
+}
+
+.market-title {
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* PROFIL & RAINBOW BORDER */
+.center-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.rainbow-glow-border {
+  width: 130px;
+  height: 130px;
+  padding: 5px;
+  border-radius: 50%;
+  background: conic-gradient(red, orange, yellow, green, cyan, blue, violet, red);
+  animation: spin 6s linear infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+}
+
+.profile-img {
+  display: block;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: white;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* LOGO */
+.logo {
+  max-width: 150px;
+  margin: 20px auto 10px;
+  display: block;
+}
+
+.logo img {
+  width: 150px;
+  height: 150px;
+  border: 4px solid #ffffff;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* JUDUL */
+h1 {
+  font-family: "Bebas Neue", sans-serif;
+  margin-top: 10px;
+  color: white;
+  text-align: center;
+  padding: 0;
+}
+
+/* BACKGROUND */
+body {
+  background-image: url('backgroundclairo.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 110vh;
+}
+
+/* TOMBOL */
+.contact-buttons {
+  margin-right: 8px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-decoration: none;
+  color: white;
+  padding: 5px 12px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 10px;
+  width: 120px;
+  max-width: 90%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.whatsapp {
+  background-color: #25D366;
+}
+
+.facebook {
+  background-color: #3b1998;
+}
+
+.whatsapp-group {
+  background-color: #128C7E;
+}
+
+/* TESTIMONI */
+.TESTIMONI-ZYY {
+  font-family: "Bebas Neue", sans-serif;
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: white;
+}
+
+/* COPYRIGHT */
+.copyright {
+  text-align: center;
+  color: white;
+  padding: 12px 0;
+  font-size: 14px;
+  background-color: transparent; /* Tidak ada border atau background */
+  font-family: "Bebas Neue", sans-serif;
+}
+
+/* SLIDER */
+.slider {
+  position: relative;
+  width: 100%;
+  max-width: 330px;
+  margin: 20px auto;
+  overflow: hidden;
+  text-align: center;
+}
+
+.slider img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 420px;
+  border-radius: 10px;
+  display: none;
+  object-fit: contain;
+}
+
+.slider img.active {
+  display: block;
+  margin: 0 auto;
+}
+
+.slider-buttons {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.slider-buttons button {
+  font-family: "Bebas Neue", sans-serif;
+  background-color: #0004;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 400px) {
+  .slider {
+    max-width: 90%;
+  }
+
+  .slider-buttons button {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+}
